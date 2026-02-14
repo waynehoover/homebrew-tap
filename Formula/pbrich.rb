@@ -1,8 +1,8 @@
 class Pbrich < Formula
   desc "Like pbcopy, but with support for arbitrary pasteboard types"
   homepage "https://github.com/waynehoover/pbrich"
-  url "https://github.com/waynehoover/pbrich/archive/v1.0.0.tar.gz"
-  sha256 "9e97c060bd8b45b446e2567f403f036c786d49cfe2e9fe4fa630e44d1f96bac2"
+  url "https://github.com/waynehoover/pbrich/archive/v1.1.0.tar.gz"
+  sha256 "57ec5bcdb7a8ee21700a9e76c3c9cefa7a045bfa0c1b785178e7dfd9d92649c8"
   license "MIT"
 
   depends_on :macos
@@ -15,6 +15,6 @@ class Pbrich < Formula
   end
 
   test do
-    assert_match "1.0.0", shell_output("#{bin}/pbrich --version")
+    assert_match "1.1.0", shell_output("#{bin}/pbrich --version")
   end
 end
