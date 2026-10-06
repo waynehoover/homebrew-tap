@@ -11,7 +11,11 @@ class Pbrich < Formula
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox",
            "--arch", "arm64", "--arch", "x86_64"
-    bin.install ".build/apple/Products/Release/pbrich"
+    build_path = Utils.safe_popen_read(
+      "swift", "build", "-c", "release", "--disable-sandbox",
+      "--arch", "arm64", "--arch", "x86_64", "--show-bin-path"
+    ).strip
+    bin.install "#{build_path}/pbrich"
   end
 
   test do
