@@ -21,7 +21,7 @@
 class Trewd < Formula
   desc "TrewSync server: self-hosted Obsidian vault sync with full version history"
   homepage "https://github.com/waynehoover/trewsync"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   # The Git export (docs/git-export.md) runs git, git-lfs and ssh. macOS has
@@ -32,22 +32,22 @@ class Trewd < Formula
   on_macos do
     on_arm do
       url "https://github.com/waynehoover/trewsync/releases/download/server/v#{version}/trewd-darwin-arm64"
-      sha256 "1e8212d27bbfdaabb16049cb61f5aa9b90ad4d858fb31b0e4755511c0f54b283" # trewd-darwin-arm64
+      sha256 "be483e6c773faee9b157306987a8973848dd851a2cd4ad6d7f9df1f6ad95cb25" # trewd-darwin-arm64
     end
     on_intel do
       url "https://github.com/waynehoover/trewsync/releases/download/server/v#{version}/trewd-darwin-amd64"
-      sha256 "3727d8e2ce0530c4cb9d637a79db3cb887292fbe507bae6fc1f3ba0e144611ea" # trewd-darwin-amd64
+      sha256 "29e64d7a5843b5ba00de1da10887ffd47ee1baf5e08494e21e5903ba44354ec4" # trewd-darwin-amd64
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/waynehoover/trewsync/releases/download/server/v#{version}/trewd-linux-arm64"
-      sha256 "0c4477d5e328cff13d32b9972219fa9dfed9c0606af66ac9844fb4efde9b6ac6" # trewd-linux-arm64
+      sha256 "d94711b504b855e9d542f3fb3044c4195cc72eb2df7a6c4c5b225af6a5cb09d8" # trewd-linux-arm64
     end
     on_intel do
       url "https://github.com/waynehoover/trewsync/releases/download/server/v#{version}/trewd-linux-amd64"
-      sha256 "c7c0db2ca174fa78d66771f5d900d6b7b9760fab4572d9af8e7ea995fbdacb84" # trewd-linux-amd64
+      sha256 "798993ed06e56195171dbddda913f49195d325e6bc8f18dd4dd6f781da1e9909" # trewd-linux-amd64
     end
   end
 
